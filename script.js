@@ -8,7 +8,7 @@ function generateQuote() {
     let subject = ["Turkey", "Polar Bear", "Gorilla"];
     let outro = ["gobbles", "chills", "examines the economy"];
 
-    // I know this is sloppy but it works
+    // I know this is sloppy but it works, also the arithmetic operator
     let picker = Math.floor(Math.random() * 3);
     let picker2 = Math.floor(Math.random() * 3);
     let picker3 = Math.floor(Math.random() * 3);
@@ -20,9 +20,8 @@ function generateQuote() {
 function checkQuote() {
     let newQuote = generateQuote();
     
-    //this took a while to figure out the logic
-    if (newQuote === oldQuote) {
-        console.log("HERE!!!")
+    //this took a while to figure out the logic, comparison and logical operator
+    if (newQuote === oldQuote && newQuote.length > 0) {
         newQuote = generateQuote();
     }
 

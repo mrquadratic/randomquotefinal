@@ -11,11 +11,20 @@ body {
     width: 5em;
 }
 
-.title, #quoteText {
+.title, #quoteText, #quoteButtonContainer {
     align-content: center;
     display: flex;
     align-items: center;
     justify-content: center;
+    font-size: 4em;
+}
+
+#quoteButtonContainer {
+    font-size: 1em;
+}
+
+#clickQuote, #quoteButton {
+    font-size: 2em;
 }
 
 /* I had to look up good hex colors to match my background not a lot of colors looked good */
