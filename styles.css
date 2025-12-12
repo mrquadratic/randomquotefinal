@@ -2,4 +2,22 @@
 
 body {
   background-color: #d8a47f;
+  display: flex;
+  flex-direction: column;
+}
+
+#quoteButton {
+    width: 5em;
+}
+
+.title, #quoteText {
+    align-content: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#quoteText {
+    color: #005AFF;
+    font-weight: 900;
 }
