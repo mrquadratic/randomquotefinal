@@ -3,6 +3,7 @@
 let oldQuote = "";
 
 function generateQuote() {
+    // I could have written out a lot of quotes and used 1 array and just randomly picked one but I thought this would be more fun
     let intro = ["Sometimes in life a", "That's how the", "A mysterious"];
     let subject = ["Turkey", "Polar Bear", "Gorilla"];
     let outro = ["gobbles", "chills", "examines the economy"];
@@ -11,6 +12,7 @@ function generateQuote() {
     let picker = Math.floor(Math.random() * 3);
     let picker2 = Math.floor(Math.random() * 3);
     let picker3 = Math.floor(Math.random() * 3);
+    // I think template literals are cool
     let quote = `${intro[picker]} ${subject[picker2]} ${outro[picker3]}!`;
     return quote
 }
@@ -18,7 +20,9 @@ function generateQuote() {
 function checkQuote() {
     let newQuote = generateQuote();
     
-    while (newQuote === oldQuote) {
+    //this took a while to figure out the logic
+    if (newQuote === oldQuote) {
+        console.log("HERE!!!")
         newQuote = generateQuote();
     }
 

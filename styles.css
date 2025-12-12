@@ -1,5 +1,6 @@
 /* Jake Zamarripa Final 12/11/25 */
 
+/* Not required but I used flex to organize everything */
 body {
   background-color: #d8a47f;
   display: flex;
@@ -17,6 +18,7 @@ body {
     justify-content: center;
 }
 
+/* I had to look up good hex colors to match my background not a lot of colors looked good */
 #quoteText {
     color: #005AFF;
     font-weight: 900;
